@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>La Silla Vacía</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="background-app">
+  <header class="header">
+    <div class="menu-nav">
+      <div id="nav-icon1">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="logo-header">
+      <img src="images/logo-header.svg" width="100%" />
+    </div>
+  </header>
+
+  <div id="menu" class="main-menu">
+    <ul>
+      <li>
+        <a href="">Mis intereses</a>
+      </li>
+      <li>
+        <a href="">Términos y condiciones</a>
+      </li>
+      <li>
+        <a href="">Otra sección</a>
+      </li>
+      <li>
+        <a href="">Cerrar sesión</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="article-container">
+    <h2>HISTORIAS</h2>
+    <ul>
+      <li>
+        <img class="cover-figure" src="http://archivo.lasillavacia.com/archivos/historias/odebrecht/35.jpg" alt="">
+        <div class="article">
+          <h4 class="nacional">Nacional</h4>
+          <h3>Esto es una prueba de un título que no debe superar las 3 líneas</h3>
+          <h5>Hace 5 horas</h5>
+        </div>
+        <div class="clearfix"></div>
+      </li>
+
+      <li><img class="cover-figure" src="http://archivo.lasillavacia.com/archivos/historias/odebrecht/35.jpg" alt="">
+        <div class="article">
+          <h4 class="caribe">Caribe</h4>
+          <h3>Esto es una prueba de un título que no debe superar las 3 líneas</h3>
+          <h5>Hace 5 horas</h5>
+        </div>
+        <div class="clearfix"></div>
+      </li>
+      <li>
+        <img class="cover-figure" src="http://archivo.lasillavacia.com/archivos/historias/odebrecht/35.jpg" alt="">
+        <div class="article">
+          <h4 class="cachaca">Cachaca</h4>
+          <h3>Esto es una prueba de un título que no debe superar las 3 líneas</h3>
+          <h5>Hace 5 horas</h5>
+        </div>
+        <div class="clearfix"></div>
+      </li>
+      <li>
+        <img class="cover-figure" src="http://archivo.lasillavacia.com/archivos/historias/odebrecht/35.jpg" alt="">
+        <div class="article">
+          <h4 class="santandereana">Santandereana</h4>
+          <h3>Esto es una prueba de un título que no debe superar las 3 líneas</h3>
+          <h5>Hace 5 horas</h5>
+        </div>
+        <div class="clearfix"></div>
+      </li>
+      <li>
+        <img class="cover-figure" src="http://archivo.lasillavacia.com/archivos/historias/odebrecht/35.jpg" alt="">
+        <div class="article">
+          <h4 class="pacifico">Pacífico</h4>
+          <h3>Esto es una prueba de un título que no debe superar las 3 líneas</h3>
+          <h5>Hace 5 horas</h5>
+        </div>
+        <div class="clearfix"></div>
+      </li>
+      <li>
+        <img class="cover-figure" src="http://archivo.lasillavacia.com/archivos/historias/odebrecht/35.jpg" alt="">
+        <div class="article">
+          <h4 class="sur">Sur</h4>
+          <h3>Esto es una prueba de un título que no debe superar las 3 líneas</h3>
+          <h5>Hace 5 horas</h5>
+        </div>
+        <div class="clearfix"></div>
+      </li>
+    </ul>
+    <div class="clearfix"></div>
+
+    <div class="vermas"><a href="">≫</a></div>
+  </div>
+
+
+
+
+  <script>
+    var button = document.querySelector("#nav-icon1");
+    var menu = document.querySelector("#menu");
+    button.addEventListener("click", toggleNav);
+    console.log(menu);
+
+    function toggleNav() {
+      if (button.classList.contains("open")) {
+        button.classList.remove("open");
+        menu.classList.remove("open");
+      } else {
+        button.classList.add("open");
+        menu.classList.add("open");
+      }
+    }
+  </script>
+
+</body>
+
+</html>
